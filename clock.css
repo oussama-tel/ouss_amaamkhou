@@ -1,0 +1,250 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+div:not(span) {
+  border: 2px solid black;
+  border-radius: 60%;
+  -webkit-border-radius: 60%;
+  -moz-border-radius: 60%;
+  -ms-border-radius: 60%;
+  -o-border-radius: 60%;
+  position: absolute;
+  height: 40vw;
+  width: 40vw;
+  left: 20%;
+  top: 10%;
+  box-shadow: inset 5px 5px 20px black;
+  background-color: rgba(215, 164, 254, 0.878);
+  animation: clock 20s ease infinite;
+  -webkit-animation: clock 20s linear infinite;
+}
+.h {
+  position: absolute;
+  width: 30%;
+  height: 7px;
+  background-color: black;
+  top: 50%;
+  left: 48%;
+  animation: 47460s h linear infinite;
+  -webkit-animation: 47460s h linear infinite;
+}
+.m {
+  position: absolute;
+  width: 32%;
+  height: 4px;
+  background-color: black;
+  top: 50%;
+  left: 48%;
+  animation: 4000s s linear infinite;
+  -webkit-animation: 4000s s linear infinite;
+}
+.s {
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  left: 48%;
+  animation: 90s s steps(120, start) infinite;
+  -webkit-animation: 90s s steps(120, start) infinite;
+}
+.m::after {
+  content: "";
+  width: 10px;
+  height: 7px;
+  background-color: black;
+  position: absolute;
+  border-radius: 60%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transform-origin: 0% 0%;
+  left: 100%;
+  top: -20%;
+}
+.h::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  border-radius: 60%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transform-origin: 0% 0%;
+  left: 99%;
+  top: -20%;
+}
+.center {
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  top: 48%;
+  left: 46%;
+  background-color: black;
+  border-radius: 60%;
+  -webkit-border-radius: 60%;
+  -moz-border-radius: 60%;
+  -ms-border-radius: 60%;
+  -o-border-radius: 60%;
+}
+.oussama {
+  position: absolute;
+  top: 68%;
+  left: 42%;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: rgb(0, 0, 0);
+}
+.tnach,
+.tlata,
+.sta,
+.ts3od {
+  position: absolute;
+  font-style: italic;
+  font-weight: bold;
+}
+.tnach {
+  left: 45%;
+}
+.tlata {
+  top: 41%;
+  left: 91%;
+}
+.sta {
+  top: 87%;
+  left: 50%;
+}
+.ts3od {
+  top: 41%;
+  left: 3%;
+}
+.m,
+.h,
+.s {
+  transform-origin: 0% 0%;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+@keyframes s {
+  0% {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
+}
+@keyframes m {
+  0% {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
+}
+@keyframes h {
+  0% {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
+}
+@keyframes clock {
+  20% {
+    background-color: rgb(237, 50, 184);
+  }
+  30% {
+    background-color: rgb(77, 168, 253);
+  }
+  40% {
+    background-color: rgb(0, 247, 255);
+  }
+  50% {
+    background-color: rgba(0, 255, 76, 0.542);
+  }
+  60% {
+    background-color: rgba(21, 255, 0, 0.452);
+  }
+  70% {
+    background-color: rgba(255, 255, 0, 0.542);
+  }
+  80% {
+    background-color: rgba(255, 200, 0, 0.542);
+  }
+  90% {
+    background-color: rgba(255, 145, 0, 0.542);
+  }
+  97% {
+    background-color: rgba(255, 77, 0, 0.542);
+  }
+}
+
+@media (max-width: 800px) {
+  .tnach {
+    left: 45%;
+    top: -7%;
+  }
+  .sta {
+    top: 77%;
+    left: 50%;
+  }
+  .center {
+    top: 48%;
+    left: 47%;
+  }
+  .oussama {
+    left: 40%;
+    letter-spacing: 0px;
+  }
+}
+.lwa7da {
+  position: absolute;
+  top: 5%;
+  left: 70%;
+}
+.joj {
+  position: absolute;
+  top: 20%;
+  left: 85%;
+}
+.rb3a {
+  position: absolute;
+  left: 90%;
+  top: 60%;
+}
+.lkhamsa {
+  position: absolute;
+  left: 75%;
+  top: 80%;
+}
+.sb3a {
+  position: absolute;
+  top: 82%;
+  left: 27%;
+}
+.tmnya {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+.l3achra {
+  position: absolute;
+  top: 20%;
+  left: 11%;
+}
+.l7dach {
+  position: absolute;
+  top: 7%;
+  left: 25%;
+}
